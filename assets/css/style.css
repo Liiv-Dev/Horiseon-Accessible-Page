@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    padding: 20px;
+    padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
 }
@@ -31,6 +31,7 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    padding: 10px;
 }
 
 /* changed div to nav */
@@ -71,8 +72,7 @@ p {
 /* replaced primary classes with card class */
 .card {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    height: 250px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
 }
@@ -134,3 +134,43 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+@media screen and (max-width: 800px) {
+     
+    body {
+        width: 100%;
+    }
+
+    .header,
+      nav,
+       ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+     }
+
+     .content img {
+        width: 200px;
+     }
+
+     .card {
+        padding: 20px;
+     }
+
+
+     .benefits {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        padding: 5px;
+     }
+}
+
